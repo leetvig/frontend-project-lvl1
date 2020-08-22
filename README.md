@@ -4,3 +4,5 @@
 # Brain Games
 
 This is console game
+
+[![asciicast](https://asciinema.org/a/IF5U7gwr6C5EhglNm6LAyoyfU.svg)](https://asciinema.org/a/IF5U7gwr6C5EhglNm6LAyoyfU)
