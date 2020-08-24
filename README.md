@@ -3,6 +3,7 @@
 
 # Brain Games
 
-This is console game
+This is console games
 
-[![asciicast](https://asciinema.org/a/IF5U7gwr6C5EhglNm6LAyoyfU.svg)](https://asciinema.org/a/IF5U7gwr6C5EhglNm6LAyoyfU)
+Even game - https://asciinema.org/a/IF5U7gwr6C5EhglNm6LAyoyfU
+Calc game - https://asciinema.org/a/an6hIEAmAkdlgVItRuVcdceul
