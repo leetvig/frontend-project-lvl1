@@ -1,6 +1,6 @@
-export const getRandomNumber = () => {
-  const maxNumber = 100;
-  return Math.floor(Math.random() * maxNumber + 1);
+export const getRandomNumber = (maxNumber = 101, minNumber = 0) => {
+  const rnd = minNumber + Math.random() * (maxNumber - minNumber);
+  return Math.floor(rnd);
 };
 
 export const getRandomSign = () => {

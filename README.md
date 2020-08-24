@@ -10,3 +10,5 @@ Even game - https://asciinema.org/a/IF5U7gwr6C5EhglNm6LAyoyfU
 Calc game - https://asciinema.org/a/an6hIEAmAkdlgVItRuVcdceul
 
 GCD game - https://asciinema.org/a/MF9a8GnxuNkcrofcVmAMupcJ8
+
+Progression game - https://asciinema.org/a/wEg5UEeIseQzCcT7s3OdKs9Fg

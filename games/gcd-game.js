@@ -4,7 +4,7 @@ import {
 } from '../src/index.js';
 
 const game = (userName) => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no"');
+  console.log('Find the greatest common divisor of given numbers.');
   for (let stage = 0; stage < numberOfStages; stage += 1) {
     const num1 = getRandomNumber();
     const num2 = getRandomNumber();
