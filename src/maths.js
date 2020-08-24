@@ -27,3 +27,12 @@ export const getExpression = (num1, num2, sign) => {
 
   return String(result);
 };
+
+export const getGCD = (num1, num2) => {
+  if (num2 > num1) return getGCD(num2, num1);
+  if (num2 > 0) {
+    const divisor = num1 % num2;
+    return getGCD(num2, divisor);
+  }
+  return String(num1);
+};
