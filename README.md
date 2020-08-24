@@ -12,3 +12,5 @@ Calc game - https://asciinema.org/a/an6hIEAmAkdlgVItRuVcdceul
 GCD game - https://asciinema.org/a/MF9a8GnxuNkcrofcVmAMupcJ8
 
 Progression game - https://asciinema.org/a/wEg5UEeIseQzCcT7s3OdKs9Fg
+
+Prime game - https://asciinema.org/a/quQJAoSDWQK6OPw8bx3NfW2sS
