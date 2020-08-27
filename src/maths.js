@@ -9,7 +9,7 @@ export const getRandomSign = () => {
   return sings[index];
 };
 
-export const getExpression = (num1, num2, sign) => {
+export const getResult = (num1, num2, sign) => {
   let result;
   switch (sign) {
     case '+':
@@ -46,4 +46,14 @@ export const isPrime = (num) => {
     }
   }
   return true;
+};
+
+export const getProgression = (firstNumber, step, progressionLength) => {
+  const progression = [];
+  let nextNumber = firstNumber;
+  for (let i = 0; i < progressionLength; i += 1) {
+    progression.push(nextNumber);
+    nextNumber += step;
+  }
+  return progression;
 };

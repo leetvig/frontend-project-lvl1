@@ -1,7 +1,7 @@
 {
   "name": "frontend-project-lvl1",
-  "version": "0.0.1",
-  "description": "Console game",
+  "version": "0.1.0",
+  "description": "Console games",
   "main": "index.js",
   "type": "module",
   "bin": {
