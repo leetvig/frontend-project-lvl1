@@ -1,33 +1,11 @@
 import readlineSync from 'readline-sync';
 
-const printTheRule = (gameName) => {
-  switch (gameName) {
-    case 'cals':
-      console.log('What is the result of the expression?');
-      break;
-    case 'even':
-      console.log('Answer "yes" if the number is even, otherwise answer "no"');
-      break;
-    case 'gcd':
-      console.log('Find the greatest common divisor of given numbers.');
-      break;
-    case 'prime':
-      console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-      break;
-    case 'progression':
-      console.log('What number is missing in the progression?');
-      break;
-    default:
-      break;
-  }
-};
-
-const gameEngine = (game, gameName) => {
+const gameEngine = (game, gameRules) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
 
-  printTheRule(gameName);
+  gameRules();
 
   const maxLevels = 3;
 
