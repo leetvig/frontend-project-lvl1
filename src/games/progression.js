@@ -1,5 +1,7 @@
 import getRandomNumber from '../random.js';
 
+const gameRules = 'What number is missing in the progression?';
+
 const getProgression = (firstNumber, step, progressionLength) => {
   const progression = [];
   let nextNumber = firstNumber;
@@ -24,10 +26,6 @@ const game = () => {
   }
   console.log(`Question: ${question}`);
   return correctAnswer;
-};
-
-const gameRules = () => {
-  console.log('What number is missing in the progression?');
 };
 
 export { game, gameRules };

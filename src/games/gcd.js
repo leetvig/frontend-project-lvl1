@@ -1,5 +1,7 @@
 import getRandomNumber from '../random.js';
 
+const gameRules = 'Find the greatest common divisor of given numbers.';
+
 const getGCD = (num1, num2) => {
   if (num2 > num1) return getGCD(num2, num1);
   if (num2 > 0) {
@@ -15,10 +17,6 @@ const game = () => {
   console.log(`Question: ${num1} ${num2}`);
   const correctAnswer = getGCD(num1, num2);
   return correctAnswer;
-};
-
-const gameRules = () => {
-  console.log('Find the greatest common divisor of given numbers.');
 };
 
 export { game, gameRules };

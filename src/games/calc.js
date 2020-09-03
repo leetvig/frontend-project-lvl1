@@ -1,14 +1,16 @@
 import getRandomNumber from '../random.js';
 
-const getRandomSign = () => {
+const gameRules = 'What is the result of the expression?';
+
+const getRandomOperation = () => {
   const sings = ['+', '-', '*'];
   const index = getRandomNumber(sings.length - 1);
   return sings[index];
 };
 
-const getResult = (num1, num2, sign) => {
+const getResult = (num1, num2, operation) => {
   let result;
-  switch (sign) {
+  switch (operation) {
     case '+':
       result = num1 + num2;
       break;
@@ -27,14 +29,10 @@ const getResult = (num1, num2, sign) => {
 const game = () => {
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
-  const sign = getRandomSign();
-  console.log(`Question: ${num1} ${sign} ${num2}`);
-  const correctAnswer = getResult(num1, num2, sign);
+  const operation = getRandomOperation();
+  console.log(`Question: ${num1} ${operation} ${num2}`);
+  const correctAnswer = getResult(num1, num2, operation);
   return correctAnswer;
-};
-
-const gameRules = () => {
-  console.log('What is the result of the expression?');
 };
 
 export { game, gameRules };
