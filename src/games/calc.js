@@ -1,16 +1,17 @@
 import getRandomNumber from '../random.js';
+import gameEngine from '../index.js';
 
 const gameRules = 'What is the result of the expression?';
 
-const getRandomOperation = () => {
-  const sings = ['+', '-', '*'];
-  const index = getRandomNumber(sings.length - 1);
-  return sings[index];
+const getRandomOperator = () => {
+  const operators = ['+', '-', '*'];
+  const index = getRandomNumber(operators.length - 1);
+  return operators[index];
 };
 
-const getResult = (num1, num2, operation) => {
+const getResult = (num1, num2, operator) => {
   let result;
-  switch (operation) {
+  switch (operator) {
     case '+':
       result = num1 + num2;
       break;
@@ -29,10 +30,12 @@ const getResult = (num1, num2, operation) => {
 const game = () => {
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
-  const operation = getRandomOperation();
-  console.log(`Question: ${num1} ${operation} ${num2}`);
-  const correctAnswer = getResult(num1, num2, operation);
-  return correctAnswer;
+  const operator = getRandomOperator();
+  const question = `Question: ${num1} ${operator} ${num2}`;
+  const correctAnswer = getResult(num1, num2, operator);
+  return [question, correctAnswer];
 };
 
-export { game, gameRules };
+const startGame = () => gameEngine(gameRules, game);
+
+export default startGame;

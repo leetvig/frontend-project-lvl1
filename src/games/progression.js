@@ -1,4 +1,5 @@
 import getRandomNumber from '../random.js';
+import gameEngine from '../index.js';
 
 const gameRules = 'What number is missing in the progression?';
 
@@ -19,13 +20,14 @@ const game = () => {
   const index = getRandomNumber(progressionLength - 1);
   const progression = getProgression(firstNumber, step, progressionLength);
   const correctAnswer = String(progression[index]);
-  let question = '';
+  let question = 'Question: ';
   for (let i = 0; i < progressionLength; i += 1) {
     question += (i === index ? '..' : String(progression[i]));
     question += ' ';
   }
-  console.log(`Question: ${question}`);
-  return correctAnswer;
+  return [question, correctAnswer];
 };
 
-export { game, gameRules };
+const startGame = () => gameEngine(gameRules, game);
+
+export default startGame;
