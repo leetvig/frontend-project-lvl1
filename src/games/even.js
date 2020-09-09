@@ -12,6 +12,6 @@ const game = () => {
   return [question, correctAnswer];
 };
 
-const startGame = () => gameEngine(gameRules, game);
+const startGame = () => gameEngine(gameRule, game);
 
 export default startGame;

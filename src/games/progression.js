@@ -1,7 +1,7 @@
 import getRandomNumber from '../random.js';
 import gameEngine from '../index.js';
 
-const gameRules = 'What number is missing in the progression?';
+const gameRule = 'What number is missing in the progression?';
 
 const getProgression = (firstNumber, step, progressionLength) => {
   const progression = [];
@@ -28,6 +28,6 @@ const game = () => {
   return [question, correctAnswer];
 };
 
-const startGame = () => gameEngine(gameRules, game);
+const startGame = () => gameEngine(gameRule, game);
 
 export default startGame;

@@ -1,7 +1,7 @@
 import getRandomNumber from '../random.js';
 import gameEngine from '../index.js';
 
-const gameRules = 'Find the greatest common divisor of given numbers.';
+const gameRule = 'Find the greatest common divisor of given numbers.';
 
 const getGCD = (num1, num2) => {
   if (num2 > num1) return getGCD(num2, num1);
@@ -20,6 +20,6 @@ const game = () => {
   return [question, correctAnswer];
 };
 
-const startGame = () => gameEngine(gameRules, game);
+const startGame = () => gameEngine(gameRule, game);
 
 export default startGame;
