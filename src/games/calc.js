@@ -1,15 +1,15 @@
 import getRandomNumber from '../random.js';
-import gameEngine from '../index.js';
+import launchGameEngine from '../index.js';
 
 const gameRule = 'What is the result of the expression?';
+const operators = ['+', '-', '*'];
 
 const getRandomOperator = () => {
-  const operators = ['+', '-', '*'];
   const index = getRandomNumber(operators.length - 1);
   return operators[index];
 };
 
-const getResult = (num1, num2, operator) => {
+const getResultOfCulculation = (num1, num2, operator) => {
   let result;
   switch (operator) {
     case '+':
@@ -24,18 +24,18 @@ const getResult = (num1, num2, operator) => {
     default:
       return undefined;
   }
-  return String(result);
+  return result;
 };
 
-const game = () => {
+const generateGameData = () => {
   const num1 = getRandomNumber();
   const num2 = getRandomNumber();
   const operator = getRandomOperator();
-  const question = `Question: ${num1} ${operator} ${num2}`;
-  const correctAnswer = getResult(num1, num2, operator);
+  const question = `${num1} ${operator} ${num2}`;
+  const correctAnswer = String(getResultOfCulculation(num1, num2, operator));
   return [question, correctAnswer];
 };
 
-const startGame = () => gameEngine(gameRule, game);
+const startGame = () => launchGameEngine(gameRule, generateGameData);
 
 export default startGame;
