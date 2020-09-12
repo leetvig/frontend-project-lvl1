@@ -1,5 +1,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/1b2be464c9580a88e297/maintainability)](https://codeclimate.com/github/leetvig/frontend-project-lvl1/maintainability)
-![Node.js CI](https://github.com/leetvig/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)
+[![Node.js CI](https://github.com/leetvig/frontend-project-lvl1/workflows/Node.js%20CI/badge.svg)](https://github.com/leetvig/frontend-project-lvl1/actions?query=workflow%3A%22Node.js+CI%22)
 
 # Brain Games
 
