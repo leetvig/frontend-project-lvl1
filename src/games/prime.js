@@ -4,9 +4,9 @@ import launchGameEngine from '../index.js';
 const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
-  if (Math.abs(num) < 2) return false;
+  if (num < 2) return false;
   for (let i = 2; i <= num / 2; i += 1) {
-    if (Math.abs(num % i) === 0) {
+    if (num % i === 0) {
       return false;
     }
   }
