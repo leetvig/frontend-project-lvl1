@@ -20,7 +20,6 @@ const getResultOfCulculation = (num1, num2, operator) => {
     default:
       return undefined;
   }
-  return undefined;
 };
 
 const generateGameData = () => {
