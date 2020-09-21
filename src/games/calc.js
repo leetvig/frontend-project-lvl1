@@ -5,26 +5,22 @@ const gameRule = 'What is the result of the expression?';
 const operators = ['+', '-', '*'];
 
 const getRandomOperator = () => {
-  const index = getRandomNumber(operators.length - 1);
+  const index = getRandomNumber(0, operators.length - 1);
   return operators[index];
 };
 
 const getResultOfCulculation = (num1, num2, operator) => {
-  let result;
   switch (operator) {
     case '+':
-      result = num1 + num2;
-      break;
+      return num1 + num2;
     case '-':
-      result = num1 - num2;
-      break;
+      return num1 - num2;
     case '*':
-      result = num1 * num2;
-      break;
+      return num1 * num2;
     default:
       return undefined;
   }
-  return result;
+  return undefined;
 };
 
 const generateGameData = () => {
